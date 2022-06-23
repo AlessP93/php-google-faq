@@ -67,9 +67,9 @@ $faqs = [
                         <div class="col-6 d-flex justify-content-end">
                             <div class="social">
                                 <span class="social_menu"><i class="fa-solid fa-table-cells"></i></span>
-                                <span class="social_letter"><i class="fa-brands fa-amilia"></i></span>
+                                 <span class="social_letter"><i class="fa-brands fa-amilia"></i></span>
                             </div>
-                        </div>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -105,10 +105,10 @@ $faqs = [
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container-custom">
             <div class="row">
                 <div class="col-6">
-                    <ul class="d-flex">
+                    <ul class="d-flex align-self-center">
                         <li><a href="#">Google</a></li>
                         <li><a href="#">Tutto su Google</a></li>
                         <li><a href="#">Privacy</a></li>
@@ -119,12 +119,14 @@ $faqs = [
                     <div class="img_ft">
                         <img src="img/download.png" alt="">
                     </div>
-                    <select class="select">
-                        <option value="">Italiano</option>
-                        <option value="">Inglese</option>
-                        <option value="">Francese</option>
-                        <option value="">Tedesco</option>
-                    </select>
+                    <div class="align-self-center ">
+                        <select class="select">
+                            <option value="">Italiano</option>
+                            <option value="">Inglese</option>
+                            <option value="">Francese</option>
+                            <option value="">Tedesco</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
