@@ -25,10 +25,7 @@ $faqs = [
     [
         "domanda" => "Perché il mio account è associato a un paese?",
         "risposta" => "<p>Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:</p> 
-        <ol>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:</ol> 
-        <li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
-        <li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
-        <ol>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</ol>
+        <ol><li>La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:<ol><li>Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li><li>Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li></ol></li><li>La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li></ol>
         <p>Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</p>" 
     ],
     [
@@ -59,25 +56,36 @@ $faqs = [
 </head>
 <body>
     <header>
-        <div class="container-fluid p-4">
+        <div class="container-fluid p-3">
             <div class="row">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-6 d-flex">
                             <img src="img/logo.svg" alt="">
-                            <h4><a href="#">Privacy e Termini</a></h4>
+                            <h5><a href="#">Privacy e Termini</a></h5>
                         </div>
-                        <div class="col-6">
-                            2 icone
+                        <div class="col-6 d-flex justify-content-end">
+                            <div class="social">
+                                <span class="social_menu"><i class="fa-solid fa-table-cells"></i></span>
+                                <span class="social_letter"><i class="fa-brands fa-amilia"></i></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row d-flex">
+            <div class="row">
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12">
-                            vari link
+                            <div class="nav_bar">
+                                <ul class="d-flex">
+                                    <li><a href="#">Introduzione</a></li>
+                                    <li><a href="#">Norme sulla Privacy</a></li>
+                                    <li><a href="#">Termini di servizio</a></li>
+                                    <li><a href="#">Tecnologie</a></li>
+                                    <li><a href="#">Domande frequenti</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +93,7 @@ $faqs = [
         </div>
     </header>
     <main>
-        <div class="container py-5">
+        <div class="container-custom py-5">
             <div class="row">
                 <div class="col-12">
                     <?php foreach ($faqs as $faq) { ?>
@@ -97,10 +105,27 @@ $faqs = [
         </div>
     </main>
     <footer>
-        <div class="container d-flex">
+        <div class="container">
             <div class="row">
-                <div class="col-6"></div>
-                <div class="col-6"></div>
+                <div class="col-6">
+                    <ul class="d-flex">
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Tutto su Google</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Termini</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 d-flex d-flex justify-content-end">
+                    <div class="img_ft">
+                        <img src="img/download.png" alt="">
+                    </div>
+                    <select class="select">
+                        <option value="">Italiano</option>
+                        <option value="">Inglese</option>
+                        <option value="">Francese</option>
+                        <option value="">Tedesco</option>
+                    </select>
+                </div>
             </div>
         </div>
     </footer>
